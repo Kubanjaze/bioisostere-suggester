@@ -1,0 +1,10 @@
+compound_name,smiles
+analog_A,C=CC(=O)Nc1ccccc1
+analog_B,C=CC(=O)Nc1ccc(F)cc1
+analog_C,C=CC(=O)Nc1ccc(Cl)cc1
+analog_D,C=CC(=O)Nc1ccc(OC)cc1
+analog_E,C=CC(=O)Nc1ccc(C)cc1
+analog_F,C=CC(=O)Nc1cccc(F)c1
+analog_G,C=CC(=O)Nc1ccc(F)c(F)c1
+analog_OH,C=CC(=O)Nc1ccc(O)cc1
+analog_FCl,C=CC(=O)Nc1ccc(F)c(Cl)c1
