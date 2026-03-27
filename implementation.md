@@ -70,6 +70,15 @@ bioisostere-suggester/
 
 ---
 
+## Key Concepts
+- **Bioisosteric replacement**: Structural substitution that maintains biological activity while modifying physicochemical properties (e.g., F to Cl, OMe to OH)
+- **SMIRKS reaction encoding**: `AllChem.ReactionFromSmarts(smirks)` compiles transformation rules; `rxn.RunReactants((mol,))` applies them to generate product variants
+- **Delta-property scoring**: `DeltaLogP = variant_logp - parent_logp` and `DeltaTPSA = variant_tpsa - parent_tpsa` quantify the property impact of each transform
+- **RO5 drug-likeness filter**: Post-transform check (MW <= 500, LogP <= 5, HBD <= 5, HBA <= 10) flags variants that retain oral bioavailability
+- **Multi-product handling**: `RunReactants` returns multiple products when SMARTS matches multiple atoms (e.g., two aryl F atoms); all unique products are kept as separate rows
+
+---
+
 ## 3. Input Format
 
 ### `data/compounds.csv`
